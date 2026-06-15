@@ -11,15 +11,17 @@ public class School {
     private int numberOfTeacher;
     private int numberOfClasses;
     private List<Student> studentList = new ArrayList<>();
+    private List<Teacher> teacherList = new ArrayList<>();
     public School(){
 
     }
-    public School(String name, int  totalNumberOfStudent, int numberOfTeacher, int numberOfClasses, List<Student> studentList ){
+    public School(String name, int  totalNumberOfStudent, int numberOfTeacher, int numberOfClasses, List<Student>studentList, List<Teacher>teacherList ){
         this.name = name;
         this.totalNumberOfStudent = totalNumberOfStudent;
         this.numberOfTeacher = numberOfTeacher;
         this.numberOfClasses = numberOfClasses;
         this.studentList = studentList;
+        this.teacherList = teacherList;
     }
 
     public void setTotalNumberOfStudent(List<Student> students){
@@ -28,6 +30,17 @@ public class School {
      public int getTotalNumberOfStudent(){
         return studentList.size();
      }
+     public void TotalNumberOfTeacher(List<Teacher> teachers){
+         int numberOfTeacher = teachers.size();
+     }
+     public int TotalNumberOfTeacher(){
+         return teacherList.size();
+     }
+     
+     
+           
+       
+    
 
     @Override
     public String toString() {
@@ -36,7 +49,8 @@ public class School {
                 ", totalNumberOfStudent=" + totalNumberOfStudent +
                 ", numberOfTeacher=" + numberOfTeacher +
                 ", numberOfClasses=" + numberOfClasses +
-                ", studentList=" + studentList +
-                '}';
+                ", studentList=" + studentList + 
+                ", teacherList=" + teacherList +
+                 '}';
     }
 }
