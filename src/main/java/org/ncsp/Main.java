@@ -22,15 +22,48 @@ public class Main {
 //                System.out.println(school2);
 
     
-                BankAccount bank1 = new BankAccount(8198, "Tobi", 1000);
-                int deposited = bank1.deposit(9000);
-                System.out.println(deposited);
-                int answer = bank1.withDraw(2000);
-                System.out.println(answer);
-                bank1.checkBalance();
+               // BankAccount bank1 = new BankAccount(8198, "Tobi", 1000);
+               // int deposited = bank1.deposit(9000);
+               // System.out.println(deposited);
+                //int answer = bank1.withDraw(2000);
+                //System.out.println(answer);
+                //bank1.checkBalance();
+                
+                
+                
+                
+                
+               // Book book1 = new Book("Atomic habits", "james clear", true);
+               // Book book2 = new Book("a tales of two cities", "charles dickson", false);
+                //Book book3 = new Book("The pragmatic programmer", "Andrew Hunt david thomas", true);
+                //Book book4 = new Book("Code complete", "steve mcConnell", true); 
+                //List<Book>booksList = new ArrayList<>();
+              // booksList.add(book1);
+               //booksList.add(book2);
+               
+               
+               GradeCalculator g1 = new GradeCalculator ();
+               //int[] score = {85, 92, 58, 97, 40, 109, 573, 54, 30, 2};
+               int[] score2 = {85, 92, 58, 105, -5};
+              String grade = g1.getLetterGrade(78);
+             System.out.println(grade);
+               
+               //for(int i = 0; i < score2.length; i++){ 
+               //String grade = g1.getLetterGrade(score2[i]);
+               //System.out.println("Score: " + score2[i] + " -->" + " Grade: " + grade);
+               
+            
+               
+               
+               
+                        
 
-        }
+        
+        
+        
 
+ 
 
-
+            }
+         
 }
