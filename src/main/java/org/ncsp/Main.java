@@ -42,28 +42,38 @@ public class Main {
                //booksList.add(book2);
                
                
-               GradeCalculator g1 = new GradeCalculator ();
+               //GradeCalculator g1 = new GradeCalculator ();
                //int[] score = {85, 92, 58, 97, 40, 109, 573, 54, 30, 2};
-               int[] score2 = {85, 92, 58, 105, -5};
-              String grade = g1.getLetterGrade(78);
-             System.out.println(grade);
+               //int[] score2 = {85, 92, 58, 105, -5};
+             // String grade = g1.getLetterGrade(78);
+             //System.out.println(grade);
                
                //for(int i = 0; i < score2.length; i++){ 
                //String grade = g1.getLetterGrade(score2[i]);
                //System.out.println("Score: " + score2[i] + " -->" + " Grade: " + grade);
                
-            
-               
-               
-               
-                        
-
+               CoffeeOrder c1 = new CoffeeOrder();
+               String[] CoffeeType = {"Latte","Espresso", "Mocha"};
+               double sum = 0.00;
+               for(int i = 0; i < CoffeeType.length; i++){
+               //for(String CoffeeTypes : CoffeeType){
+                 //System.out.println(CoffeeTypes);
+              double price = c1.getprice(CoffeeType[i]);
+              if(price == 0.0){
+                  System.out.println("unknown coffee type: " + CoffeeType[i]);
+                  } else {
+                    sum = sum + price;
+                  }
+                       
+               }
         
-        
-        
+               System.out.println("Total cost for cart: " + "$" + sum);
+       
 
- 
-
-            }
-         
+          }
+        
 }
+
+        
+         
+
