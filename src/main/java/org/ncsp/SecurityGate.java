@@ -33,15 +33,21 @@ public class SecurityGate {
     
     
     
-public void checkAccess(String userInput1, String userInput2,String userInput3){ 
-    System.out.println("Testing: " + userInput1 + "-->" + " Access Granted:" + " " + CORRECT_PASSWORD.equalsIgnoreCase(userInput1));
-    System.out.println("Testing: " + userInput2 + "-->" + " Warning:" + " Case mismatch!" + " Access Granted:" + " " + CORRECT_PASSWORD.equals(userInput2));
-    System.out.println("Testing: " + userInput3 + "-->" + " Access Denied." + " Access Granted:" + " " + CORRECT_PASSWORD.equals(userInput3));
+public String checkAccess(String userInput){ 
+    if(CORRECT_PASSWORD.equals(userInput)){ 
+        return"Testing: "+ userInput + " -> Access Granted: " + CORRECT_PASSWORD.equals(userInput) ;
+      }    
+     else if(CORRECT_PASSWORD.equalsIgnoreCase(userInput)){
+      return "Testing: "+ userInput + " -> Access Granted: " + CORRECT_PASSWORD.equals(userInput) ;
+              
+     }else{    
+         return "Testing: "+ userInput + " -> Access Denied. " + " Access Granted :" +  CORRECT_PASSWORD.equals(userInput);
+     }
     
-    
-    
-     
-     
+    //System.out.println("Testing: " + userInput1 + "-->" + " Access Granted:" + " " + CORRECT_PASSWORD.equalsIgnoreCase(userInput1));
+    //System.out.println("Testing: " + userInput2 + "-->" + " Warning:" + " Case mismatch!" + " Access Granted:" + " " + CORRECT_PASSWORD.equals(userInput2));
+   // System.out.println("Testing: " + userInput3 + "-->" + " Access Denied." + " Access Granted:" + " " + CORRECT_PASSWORD.equals(userInput3));
+   
 }
 }
 
