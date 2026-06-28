@@ -75,7 +75,7 @@ public class Main {
 
          SecurityGate s1 = new SecurityGate(); 
          
-         String result = s1.checkAccess("thatsgsgg");
+         String result = s1.checkAccess("JavaRocks2026");
          
          System.out.println(result);
 }
