@@ -52,26 +52,32 @@ public class Main {
                //String grade = g1.getLetterGrade(score2[i]);
                //System.out.println("Score: " + score2[i] + " -->" + " Grade: " + grade);
                
-               CoffeeOrder c1 = new CoffeeOrder();
-               String[] CoffeeType = {"Latte","Espresso", "Mocha"};
-               double sum = 0.00;
-               for(int i = 0; i < CoffeeType.length; i++){
-               //for(String CoffeeTypes : CoffeeType){
-                 //System.out.println(CoffeeTypes);
-              double price = c1.getprice(CoffeeType[i]);
-              if(price == 0.0){
-                  System.out.println("unknown coffee type: " + CoffeeType[i]);
-                  } else {
-                    sum = sum + price;
-                  }
-                       
-               }
+//               CoffeeOrder c1 = new CoffeeOrder();
+//               String[] CoffeeType = {"Latte","Espresso", "Mocha"};
+//               double sum = 0.00;
+//               for(int i = 0; i < CoffeeType.length; i++){
+//               //for(String CoffeeTypes : CoffeeType){
+//                 //System.out.println(CoffeeTypes);
+//              double price = c1.getprice(CoffeeType[i]);
+//              if(price == 0.0){
+//                  System.out.println("unknown coffee type: " + CoffeeType[i]);
+//                  } else {
+//                    sum = sum + price;
+//                  }
+//                       
+//               }
+//        
+//               System.out.println("Total cost for cart: " + "$" + sum);
+//       
+//
+//          }
         
-               System.out.println("Total cost for cart: " + "$" + sum);
-       
-
-          }
         
+//        MultiplicationTable m1 = new MultiplicationTable();
+//        
+//        m1.printTable(5,5);
+        
+}
 }
 
         
