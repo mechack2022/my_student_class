@@ -51,7 +51,7 @@ public class Main {
                //for(int i = 0; i < score2.length; i++){ 
                //String grade = g1.getLetterGrade(score2[i]);
                //System.out.println("Score: " + score2[i] + " -->" + " Grade: " + grade);
-//               
+               
 //               CoffeeOrder c1 = new CoffeeOrder();
 //               String[] CoffeeType = {"Latte","Espresso", "Mocha"};
 //               double sum = 0.00;
