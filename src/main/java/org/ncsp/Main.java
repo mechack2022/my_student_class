@@ -71,12 +71,13 @@ public class Main {
 //       
 //
 //          }
-        
-        
-//        MultiplicationTable m1 = new MultiplicationTable();
 //        
-//        m1.printTable(5,5);
-        
+
+         SecurityGate s1 = new SecurityGate(); 
+         
+         String result = s1.checkAccess("JavaRocks2026");
+         
+         System.out.println(result);
 }
 }
 

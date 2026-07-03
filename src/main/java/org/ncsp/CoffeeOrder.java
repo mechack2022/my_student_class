@@ -16,27 +16,15 @@ public class CoffeeOrder {
       switch(coffeeType){
           case "Latte": 
               return 4.00;
-             
           case "Americano":
               return 3.00;
-             
           case "Espresso":
               return 2.50;
-             
           case "Cappuccino":
-              return 4.50;
-              
+                return 4.50;
           default:
               return 0.00;
              
-          
-                  
-             
-              
-              
-             
-     
-    
      }
  }
 }
