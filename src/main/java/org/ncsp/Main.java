@@ -8,6 +8,8 @@ import org.ncsp.classesMethod.Student;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.rmi.ssl.SslRMIServerSocketFactory;
+
 public class Main {
 
 
@@ -73,11 +75,15 @@ public class Main {
 //          }
 //        
 
-         SecurityGate s1 = new SecurityGate(); 
+        //  SecurityGate s1 = new SecurityGate(); 
          
-         String result = s1.checkAccess("JavaRocks2026");
+        //  String result = s1.checkAccess("JavaRocks2026");
          
-         System.out.println(result);
+        //  System.out.println(result);
+        ATMSimulator a1 = new ATMSimulator();
+        int[] attempts = {1111, 1239, 4356, 5463 ,9426, 1234};
+        a1.atmCheckPIN2(attempts);
+        
 }
 }
 
