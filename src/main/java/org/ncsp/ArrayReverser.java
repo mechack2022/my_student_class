@@ -5,7 +5,7 @@ public class ArrayReverser {
 
     public void reverseArray(int [] arr){
         int left = 0;
-        int right = 4;
+        int right = arr.length -1;
         while(left < right){
 
             int temp = arr[left];

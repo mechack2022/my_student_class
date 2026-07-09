@@ -84,7 +84,7 @@ public class Main {
         // int[] attempts = {1111, 1239, 4356, 5463 ,9426, 1234};
         // a1.atmCheckPIN2(attempts);
         ArrayReverser r1 = new ArrayReverser();
-        int[] array = {1, 2, 3, 4, 5};
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8};
         r1.reverseArray(array);
 }
 }
