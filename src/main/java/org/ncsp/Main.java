@@ -4,6 +4,10 @@ import bankapp.BankAccount;
 import org.ncsp.classesMethod.SampleSchool;
 import org.ncsp.classesMethod.School;
 import org.ncsp.classesMethod.Student;
+import org.ncsp.oop.payroll_system.Employee;
+import org.ncsp.oop.payroll_system.FullTimeEmployee;
+import org.ncsp.oop.payroll_system.HourlyEmployee;
+import org.ncsp.oop.payroll_system.Payable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -83,10 +87,41 @@ public class Main {
         // ATMSimulator a1 = new ATMSimulator();
         // int[] attempts = {1111, 1239, 4356, 5463 ,9426, 1234};
         // a1.atmCheckPIN2(attempts);
-        ArrayReverser r1 = new ArrayReverser();
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8};
-        r1.reverseArray(array);
-}
+        // ArrayReverser r1 = new ArrayReverser();
+        //int[] array = {1, 2, 3, 4, 5, 6, 7, 8, "354"};
+
+       // String[] array2 = {1, 2, 3, 4, 5, 6, 7, 8, "354"};
+        // r1.reverseArray(array);
+        
+
+        
+
+        
+        
+        ArrayList<Employee> employee = new ArrayList<>();
+        FullTimeEmployee f1 = new FullTimeEmployee("alice", 1009, 5000.0);
+        FullTimeEmployee f2 = new FullTimeEmployee("Tobi", 2000, 600.0);
+        FullTimeEmployee f3 = new FullTimeEmployee("taiwo", 8490, 17000);
+        HourlyEmployee h1 = new HourlyEmployee("propser", 3000, 20, 40);
+        HourlyEmployee h2 = new HourlyEmployee("Nadia", 2240 , 6, 15);
+        employee.add(f1);
+        employee.add(f2);
+        employee.add(f3);
+        employee.add(h1);
+        employee.add(h2);
+        double totalPayroll = 0;
+        for( Employee e: employee){
+                double pay = e.calculatePay();
+                totalPayroll += pay;
+                if(e instanceof FullTimeEmployee){
+                        System.out.println(e.getName() + " (Full time): $" + pay);
+                }else if (e instanceof HourlyEmployee){
+                        System.out.println(e.getName() + " (Hourly): $" + pay);
+                }
+        }
+        System.out.println("Total Payroll: $" + totalPayroll);
+               
+        }
 }
 
         
