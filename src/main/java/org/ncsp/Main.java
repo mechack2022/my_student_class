@@ -8,6 +8,7 @@ import org.ncsp.oop.payroll_system.Employee;
 import org.ncsp.oop.payroll_system.FullTimeEmployee;
 import org.ncsp.oop.payroll_system.HourlyEmployee;
 import org.ncsp.oop.payroll_system.Payable;
+import org.ncsp.oop.ticket_booking.MovieTicket;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -98,31 +99,34 @@ public class Main {
 
         
         
-        ArrayList<Employee> employee = new ArrayList<>();
-        FullTimeEmployee f1 = new FullTimeEmployee("alice", 1009, 5000.0);
-        FullTimeEmployee f2 = new FullTimeEmployee("Tobi", 2000, 600.0);
-        FullTimeEmployee f3 = new FullTimeEmployee("taiwo", 8490, 17000);
-        HourlyEmployee h1 = new HourlyEmployee("propser", 3000, 20, 40);
-        HourlyEmployee h2 = new HourlyEmployee("Nadia", 2240 , 6, 15);
-        employee.add(f1);
-        employee.add(f2);
-        employee.add(f3);
-        employee.add(h1);
-        employee.add(h2);
-        double totalPayroll = 0;
-        for( Employee e: employee){
-                double pay = e.calculatePay();
-                totalPayroll += pay;
-                if(e instanceof FullTimeEmployee){
-                        System.out.println(e.getName() + " (Full time): $" + pay);
-                }else if (e instanceof HourlyEmployee){
-                        System.out.println(e.getName() + " (Hourly): $" + pay);
-                }
-        }
-        System.out.println("Total Payroll: $" + totalPayroll);
+        // ArrayList<Employee> employee = new ArrayList<>();
+        // FullTimeEmployee f1 = new FullTimeEmployee("alice", 1009, 5000.0);
+        // FullTimeEmployee f2 = new FullTimeEmployee("Tobi", 2000, 600.0);
+        // HourlyEmployee h1 = new HourlyEmployee("propser", 3000, 20, 40);
+        // HourlyEmployee h2 = new HourlyEmployee("Nadia", 2240 , 6, 15);
+        // employee.add(f1);
+        // employee.add(f2);
+        // employee.add(h1);
+        // employee.add(h2);
+        // double totalPayroll = 0;
+        // for( Employee e: employee){
+        //         double pay = e.calculatePay();
+        //         totalPayroll += pay;
+        //         if(e instanceof FullTimeEmployee){
+        //                 System.out.println(e.getName() + " (Full time): $" + pay);
+        //         }else if (e instanceof HourlyEmployee){
+        //                 System.out.println(e.getName() + " (Hourly): $" + pay);
+        //         }
+        // }
+        // System.out.println("Total Payroll: $" + totalPayroll);
                
-        }
+    }
 }
+
+
+
+        
+        
 
         
          
