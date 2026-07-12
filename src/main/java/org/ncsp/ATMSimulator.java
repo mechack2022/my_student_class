@@ -1,9 +1,6 @@
 package org.ncsp;
 
-public  InnerATMSimulator {
-
-    
-}  class ATMSimulator {
+ class ATMSimulator {
     
 static final int CORRECT_PIN = 1234;
 

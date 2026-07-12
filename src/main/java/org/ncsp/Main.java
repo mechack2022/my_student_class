@@ -120,27 +120,12 @@ public class Main {
         // }
         // System.out.println("Total Payroll: $" + totalPayroll);
                
-        // }
-
-
-
-        ArrayList<MovieTicket> ticket = new ArrayList<>();
-        MovieTicket m1 = new MovieTicket("Dune", "A1", 12.50);
-        MovieTicket m2 = new MovieTicket("motana", "B2", 15.00);
-        MovieTicket m3 = new MovieTicket("Harrypotter", "C1", 40.50);
-        MovieTicket m4 = new MovieTicket("Badland", "D7", 60.00);
-        ticket.add(m1);
-        ticket.add(m2);
-        ticket.add(m3);
-        ticket.add(m4);
-        double totalrevenue = 0;
-        for(MovieTicket e : ticket){
-                e.printTicket();
-                totalrevenue += e.getprice();
-        }
-        System.out.println("Total totalrevenue: $" + totalrevenue);
+    }
 }
-}
+
+
+
+        
         
 
         
