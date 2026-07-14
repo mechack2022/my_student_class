@@ -12,31 +12,29 @@ public class Smartphone {
         this.batteryLevel = batteryLevel;
     }
 
-    public void charge(int amount){
+    public String charge(int amount){
         batteryLevel += amount;
         if(batteryLevel > 100){
             batteryLevel = 100;
-            System.out.println("battery capped at 100%"); 
+            return "battery capped at 100%"; 
         }
+        return "";
     }
-        public void usePhone(int drain){
+        public String usePhone(int drain){
             batteryLevel -= drain;
             if(batteryLevel < 0){
                 batteryLevel = 0;
-                System.out.println("phone died! Battery at 0%");
+                return "phone died! Battery at 0%";
             }
+            return "";
         }
-            public void  displayStatus(){
-               System.out.println("Brand " + brand);
-               System.out.println("Batterylevel " + batteryLevel);
-                
-
-
-            }
-        
-
+            public String displayStatus(){
+               return "Brand " + brand +  " , Batterylevel " + batteryLevel;
 
         }
+    }
+    
+
 
 
     
